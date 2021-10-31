@@ -27,7 +27,7 @@
 #git clone https://github.com/esirplayground/luci-app-poweroff.git package/luci-app-poweroff
 
 # 添加argon主题
-git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
+#git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
 
 # 添加edge主题
-git clone https://github.com/kiddin9/luci-theme-edge.git package/luci-theme-edge
+#git clone https://github.com/kiddin9/luci-theme-edge.git package/luci-theme-edge
