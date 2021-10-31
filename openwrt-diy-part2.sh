@@ -15,8 +15,8 @@ sed -i 's/192.168.1.1/192.168.99.1/g' package/base-files/files/bin/config_genera
 
 #添加Lean的luci
 
-svn co --force https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-arpbind package/luci-app-arpbind && svn revert -R package/luci-app-arpbind
-svn co --force https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-autoreboot package/luci-app-autoreboot && svn revert -R package/luci-app-autoreboot
+#svn co --force https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-arpbind package/luci-app-arpbind && svn revert -R package/luci-app-arpbind
+#svn co --force https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-autoreboot package/luci-app-autoreboot && svn revert -R package/luci-app-autoreboot
 svn co --force https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-filetransfer package/luci-app-filetransfer && svn revert -R package/luci-app-filetransfer
 svn co --force https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-frpc package/luci-app-frpc && svn revert -R package/luci-app-frpc
 svn co --force https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-ipsec-vpnd package/luci-app-arpbind && svn revert -R package/luci-app-ipsec-vpnd
