@@ -22,7 +22,7 @@
 
 # 添加Passwall
 #git clone https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall
-
+git clone https://github.com/Swiftfrog/openwrt-package
 # 添加poweroff
 #git clone https://github.com/esirplayground/luci-app-poweroff.git package/luci-app-poweroff
 
