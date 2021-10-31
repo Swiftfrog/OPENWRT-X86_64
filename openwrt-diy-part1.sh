@@ -21,7 +21,7 @@
 # git clone https://github.com/rufengsuixing/luci-app-adguardhome package/luci-app-adguardhome
 
 # 添加Passwall
-git clone https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall
+#git clone https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall
 
 # 添加poweroff
 #git clone https://github.com/esirplayground/luci-app-poweroff.git package/luci-app-poweroff
@@ -31,5 +31,3 @@ git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-a
 
 # 添加edge主题
 git clone https://github.com/kiddin9/luci-theme-edge.git package/luci-theme-edge
-
-
