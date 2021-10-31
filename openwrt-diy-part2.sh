@@ -13,6 +13,20 @@
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.99.1/g' package/base-files/files/bin/config_generate
 
+#添加Lean的luci
+
+svn co --force https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-arpbind package/luci-app-arpbind && svn revert -R package/luci-app-arpbind
+svn co --force https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-autoreboot package/luci-app-autoreboot && svn revert -R package/luci-app-autoreboot
+svn co --force https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-filetransfer package/luci-app-filetransfer && svn revert -R package/luci-app-filetransfer
+svn co --force https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-frpc package/luci-app-frpc && svn revert -R package/luci-app-frpc
+svn co --force https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-ipsec-vpnd package/luci-app-arpbind && svn revert -R package/luci-app-ipsec-vpnd
+svn co --force https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-turboacc package/luci-app-turboacc && svn revert -R package/luci-app-turboacc
+svn co --force https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-vlmcsd package/luci-app-vlmcsd && svn revert -R package/luci-app-vlmcsd
+svn co --force https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-webadmin package/luci-app-webadmin && svn revert -R package/luci-app-webadmin
+
+#passwall-package 
+git clone https://github.com/xiaorouji/openwrt-passwall.git  package/passwall
+
 # add upx
 mkdir -p tools/ucl && wget -P tools/ucl https://raw.githubusercontent.com/coolsnowwolf/lede/master/tools/ucl/Makefile 
 mkdir -p tools/upx && wget -P tools/upx https://raw.githubusercontent.com/coolsnowwolf/lede/master/tools/upx/Makefile
