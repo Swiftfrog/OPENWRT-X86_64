@@ -19,11 +19,26 @@
 # git clone https://github.com/destan19/OpenAppFilter package/OpenAppFilter
 # 添加AdguardHome
 # git clone https://github.com/rufengsuixing/luci-app-adguardhome package/luci-app-adguardhome
+
 # 添加Passwall
 git clone https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall
+
 # 添加poweroff
 #git clone https://github.com/esirplayground/luci-app-poweroff.git package/luci-app-poweroff
+
 # 添加argon主题
 git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
+
 # 添加edge主题
 git clone https://github.com/kiddin9/luci-theme-edge.git package/luci-theme-edge
+
+# add upx
+mkdir -p tools/ucl && wget -P tools/ucl https://raw.githubusercontent.com/coolsnowwolf/lede/master/tools/ucl/Makefile 
+mkdir -p tools/upx && wget -P tools/upx https://raw.githubusercontent.com/coolsnowwolf/lede/master/tools/upx/Makefile
+sed -i '23a\tools-y += ucl upx' tools/Makefile
+sed -i '/builddir dependencies/a\$(curdir)/upx/compile := $(curdir)/ucl/compile' tools/Makefile
+
+#update golang
+pushd feeds/packages/lang
+rm -rf golang && svn co https://github.com/openwrt/packages/trunk/lang/golang
+popd
