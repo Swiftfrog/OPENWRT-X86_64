@@ -26,4 +26,4 @@ git clone https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall
 # 添加argon主题
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
 # 添加edge主题
-git clone -b 18.06 https://github.com/a0575/luci-theme-edge.git package/luci-theme-edge
+git clone -b 18.06 https://github.com/kiddin9/luci-theme-edge.git package/luci-theme-edge
