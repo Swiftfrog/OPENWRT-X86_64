@@ -27,8 +27,6 @@ sed -i 's/192.168.1.1/192.168.99.1/g' package/base-files/files/bin/config_genera
 #passwall-package 
 git clone https://github.com/xiaorouji/openwrt-passwall.git  package/passwall
 
-git clone https://github.com/Swiftfrog/openwrt-package package/frog
-
 # add upx
 mkdir -p tools/ucl && wget -P tools/ucl https://raw.githubusercontent.com/coolsnowwolf/lede/master/tools/ucl/Makefile 
 mkdir -p tools/upx && wget -P tools/upx https://raw.githubusercontent.com/coolsnowwolf/lede/master/tools/upx/Makefile
