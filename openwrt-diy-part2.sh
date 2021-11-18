@@ -16,24 +16,6 @@ sed -i 's/192.168.1.1/192.168.99.1/g' package/base-files/files/bin/config_genera
 #passwall-package 
 git clone https://github.com/xiaorouji/openwrt-passwall.git  package/passwall
 
-#add Lean package
-#luci-app-ipsec-vpnd
-svn co --force https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-ipsec-vpnd package/luci-app-ipsec-vpnd && svn revert -R package/luci-app-ipsec-vpnd
-#luci-app-vlmcsd
-svn co --force https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-vlmcsd package/luci-app-vlmcsd && svn revert -R package/luci-app-vlmcsd
-svn co --force https://github.com/coolsnowwolf/lede/trunk/package/lean/vlmcsd package/vlmcsd && svn revert -R package/vlmcsd
-#luci-app-turboacc
-svn co --force https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-turboacc package/luci-app-turboacc && svn revert -R package/luci-app-turboacc
-svn co --force https://github.com/coolsnowwolf/lede/trunk/package/lean/dnsforwarder package/dnsforwarder && svn revert -R package/dnsforwarder
-svn co --force https://github.com/coolsnowwolf/lede/trunk/package/lean/dnsproxy package/dnsproxy && svn revert -R package/dnsproxy
-svn co --force https://github.com/coolsnowwolf/lede/trunk/package/lean/shortcut-fe package/shortcut-fe && svn revert -R package/shortcut-fe
-#luci-app-arpbind
-svn co --force https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-arpbind package/luci-app-arpbind && svn revert -R package/luci-app-arpbind
-#luci-app-webadmin
-svn co --force https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-webadmin package/luci-app-webadmin && svn revert -R package/luci-app-webadmin
-#pdnsd-alt
-svn co --force https://github.com/coolsnowwolf/lede/trunk/package/lean/pdnsd-alt package/pdnsd-alt && svn revert -R package/pdnsd-alt
-
 # add upx
 mkdir -p tools/ucl && wget -P tools/ucl https://raw.githubusercontent.com/coolsnowwolf/lede/master/tools/ucl/Makefile 
 mkdir -p tools/upx && wget -P tools/upx https://raw.githubusercontent.com/coolsnowwolf/lede/master/tools/upx/Makefile
