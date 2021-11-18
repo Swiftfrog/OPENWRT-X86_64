@@ -31,16 +31,3 @@ git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-a
 
 # 添加edge主题
 #git clone https://github.com/kiddin9/luci-theme-edge.git package/luci-theme-edge
-
-#add Lean package
-#luci-app-ipsec-vpnd
-svn co --force https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-ipsec-vpnd package/luci-app-ipsec-vpnd && svn revert -R package/luci-app-ipsec-vpnd
-#luci-app-vlmcsd
-svn co --force https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-vlmcsd package/luci-app-vlmcsd && svn revert -R package/luci-app-vlmcsd
-svn co --force https://github.com/coolsnowwolf/lede/trunk/package/lean/vlmcsd package/vlmcsd && svn revert -R package/vlmcsd
-#luci-app-arpbind
-svn co --force https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-arpbind package/luci-app-arpbind && svn revert -R package/luci-app-arpbind
-#luci-app-webadmin
-svn co --force https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-webadmin package/luci-app-webadmin && svn revert -R package/luci-app-webadmin
-#pdnsd-alt
-svn co --force https://github.com/coolsnowwolf/lede/trunk/package/lean/pdnsd-alt package/pdnsd-alt && svn revert -R package/pdnsd-alt
