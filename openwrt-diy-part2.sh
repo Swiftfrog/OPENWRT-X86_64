@@ -23,7 +23,7 @@ svn co --force https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-
 svn co --force https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-vlmcsd package/luci-app-vlmcsd && svn revert -R package/luci-app-vlmcsd
 svn co --force https://github.com/coolsnowwolf/lede/trunk/package/lean/vlmcsd package/vlmcsd && svn revert -R package/vlmcsd
 #luci-app-arpbind
-svn co --force https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-arpbind package/luci-app-arpbind && svn revert -R package/luci-app-arpbind
+#svn co --force https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-arpbind package/luci-app-arpbind && svn revert -R package/luci-app-arpbind
 #luci-app-webadmin
 svn co --force https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-webadmin package/luci-app-webadmin && svn revert -R package/luci-app-webadmin
 
