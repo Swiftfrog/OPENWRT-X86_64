@@ -24,8 +24,8 @@ env:
   REPO_BRANCH: openwrt-21.02
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .openwrt2102
-  DIY_P1_SH: master-diy1.sh
-  DIY_P2_SH: master-diy2.sh
+  DIY_P1_SH: 2102-diy1.sh
+  DIY_P2_SH: 2102-diy2.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: false
