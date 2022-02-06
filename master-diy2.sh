@@ -25,7 +25,7 @@ svn co --force https://github.com/coolsnowwolf/lede/trunk/package/lean/vlmcsd pa
 #luci-app-arpbind
 #svn co --force https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-arpbind package/luci-app-arpbind && svn revert -R package/luci-app-arpbind
 #luci-app-webadmin
-svn co --force https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-webadmin package/luci-app-webadmin && svn revert -R package/luci-app-webadmin
+#svn co --force https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-webadmin package/luci-app-webadmin && svn revert -R package/luci-app-webadmin
 
 # add upx
 mkdir -p tools/ucl && wget -P tools/ucl https://raw.githubusercontent.com/coolsnowwolf/lede/master/tools/ucl/Makefile 
