@@ -35,6 +35,6 @@ sed -i '23a\tools-y += ucl upx' tools/Makefile
 sed -i '/builddir dependencies/a\$(curdir)/upx/compile := $(curdir)/ucl/compile' tools/Makefile
 
 #update golang
-pushd feeds/packages/lang
-rm -rf golang && svn co https://github.com/openwrt/packages/trunk/lang/golang
+#pushd feeds/packages/lang
+#rm -rf golang && svn co https://github.com/openwrt/packages/trunk/lang/golang
 popd
