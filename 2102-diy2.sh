@@ -15,6 +15,7 @@ sed -i 's/192.168.1.1/192.168.99.1/g' package/base-files/files/bin/config_genera
 
 #passwall-package 
 git clone https://github.com/xiaorouji/openwrt-passwall.git  package/passwall
+git clone https://github.com/xiaorouji/openwrt-passwall2.git package/openwrt-passwall2
 
 #add Lean package
 #luci-app-ipsec-vpnd
