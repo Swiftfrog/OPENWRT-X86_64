@@ -36,5 +36,5 @@ sed -i '/builddir dependencies/a\$(curdir)/upx/compile := $(curdir)/ucl/compile'
 
 #update golang
 pushd feeds/packages/lang
-rm -rf golang && svn co https://github.com/coolsnowwolf/packages/trunk/lang/golang
+rm -rf golang && svn co https://github.com/Lienol/openwrt-packages/trunk/21.02/lang/golang
 popd
