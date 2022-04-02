@@ -21,8 +21,8 @@ git clone https://github.com/xiaorouji/openwrt-passwall2.git package/openwrt-pas
 #luci-app-ipsec-vpnd
 #svn co --force https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-ipsec-vpnd package/luci-app-ipsec-vpnd && svn revert -R package/luci-app-ipsec-vpnd
 #luci-app-vlmcsd
-svn co --force https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-vlmcsd package/luci-app-vlmcsd && svn revert -R package/luci-app-vlmcsd
-svn co --force https://github.com/coolsnowwolf/lede/trunk/package/lean/vlmcsd package/vlmcsd && svn revert -R package/vlmcsd
+#svn co --force https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-vlmcsd package/luci-app-vlmcsd && svn revert -R package/luci-app-vlmcsd
+#svn co --force https://github.com/coolsnowwolf/lede/trunk/package/lean/vlmcsd package/vlmcsd && svn revert -R package/vlmcsd
 #luci-app-arpbind
 #svn co --force https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-arpbind package/luci-app-arpbind && svn revert -R package/luci-app-arpbind
 #luci-app-webadmin
