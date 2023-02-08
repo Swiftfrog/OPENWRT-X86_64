@@ -32,12 +32,12 @@ git clone https://github.com/sirpdboy/luci-app-lucky.git package/lucky
 #svn co --force https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-webadmin package/luci-app-webadmin && svn revert -R package/luci-app-webadmin
 
 # add upx
-mkdir -p tools/ucl && wget -P tools/ucl https://raw.githubusercontent.com/coolsnowwolf/lede/master/tools/ucl/Makefile 
-mkdir -p tools/upx && wget -P tools/upx https://raw.githubusercontent.com/coolsnowwolf/lede/master/tools/upx/Makefile
-sed -i '23a\tools-y += ucl upx' tools/Makefile
-sed -i '/builddir dependencies/a\$(curdir)/upx/compile := $(curdir)/ucl/compile' tools/Makefile
+#mkdir -p tools/ucl && wget -P tools/ucl https://raw.githubusercontent.com/coolsnowwolf/lede/master/tools/ucl/Makefile 
+#mkdir -p tools/upx && wget -P tools/upx https://raw.githubusercontent.com/coolsnowwolf/lede/master/tools/upx/Makefile
+#sed -i '23a\tools-y += ucl upx' tools/Makefile
+#sed -i '/builddir dependencies/a\$(curdir)/upx/compile := $(curdir)/ucl/compile' tools/Makefile
 
 #update golang
-#pushd feeds/packages/lang
-#rm -rf golang && svn co https://github.com/Lienol/openwrt-packages/trunk/lang/golang
-#popd
+pushd feeds/packages/lang
+rm -rf golang && svn co https://github.com/openwrt/packages/trunk/lang/golang
+popd
