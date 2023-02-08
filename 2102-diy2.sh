@@ -38,6 +38,6 @@ git clone https://github.com/sirpdboy/luci-app-lucky.git package/lucky
 #sed -i '/builddir dependencies/a\$(curdir)/upx/compile := $(curdir)/ucl/compile' tools/Makefile
 
 #update golang
-pushd feeds/packages/lang
-rm -rf golang && svn co https://github.com/openwrt/packages/trunk/lang/golang
-popd
+#pushd feeds/packages/lang
+#rm -rf golang && svn co https://github.com/openwrt/packages/trunk/lang/golang
+#popd
