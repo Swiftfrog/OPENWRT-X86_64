@@ -18,7 +18,7 @@ git clone https://github.com/xiaorouji/openwrt-passwall.git  package/passwall
 git clone -b luci https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall
 #git clone https://github.com/xiaorouji/openwrt-passwall2.git package/passwall2
 #Lucky-Go
-#git clone https://github.com/sirpdboy/luci-app-lucky.git package/lucky
+git clone https://github.com/sirpdboy/luci-app-lucky.git package/lucky
 
 #add Lean package
 #luci-app-ipsec-vpnd
@@ -38,7 +38,6 @@ git clone -b luci https://github.com/xiaorouji/openwrt-passwall package/openwrt-
 #sed -i '/builddir dependencies/a\$(curdir)/upx/compile := $(curdir)/ucl/compile' tools/Makefile
 
 #update golang
-
-pushd feeds/packages/lang
-rm -rf golang && svn co https://github.com/openwrt/packages/branches/openwrt-22.03/lang/golang
-popd
+#pushd feeds/packages/lang
+#rm -rf golang && svn co https://github.com/openwrt/packages/branches/openwrt-22.03/lang/golang
+#popd
