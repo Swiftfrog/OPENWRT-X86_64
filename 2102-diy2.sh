@@ -18,7 +18,7 @@ git clone https://github.com/xiaorouji/openwrt-passwall.git  package/passwall
 git clone -b luci https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall
 #git clone https://github.com/xiaorouji/openwrt-passwall2.git package/passwall2
 #Lucky-Go
-git clone https://github.com/sirpdboy/luci-app-lucky.git package/lucky
+#git clone https://github.com/sirpdboy/luci-app-lucky.git package/lucky
 
 #add Lean package
 #luci-app-ipsec-vpnd
