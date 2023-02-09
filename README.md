@@ -42,3 +42,9 @@ A template for building OpenWrt with GitHub Actions
 ## License
 
 [MIT](https://github.com/P3TERX/Actions-OpenWrt/blob/main/LICENSE) © [**P3TERX**](https://p3terx.com)
+
+## 简单说明
+
+感谢各位开源的大神们。
+
+这个主要是编译了Openwrt-22.03 + Passwall。
