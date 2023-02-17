@@ -21,9 +21,9 @@ on:
 
 env:
   REPO_URL: https://github.com/openwrt/openwrt
-  REPO_BRANCH: openwrt-21.02
+  REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: 2102openwrt
+  CONFIG_FILE: Master
   DIY_P1_SH: 2102-diy1.sh
   DIY_P2_SH: 2102-diy2.sh
   UPLOAD_BIN_DIR: false
