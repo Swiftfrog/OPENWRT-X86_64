@@ -14,8 +14,10 @@
 sed -i 's/192.168.1.1/192.168.99.1/g' package/base-files/files/bin/config_generate
 
 #passwall-package 
-git clone https://github.com/xiaorouji/openwrt-passwall.git  package/passwall
-git clone -b luci https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall
+git clone https://github.com/xiaorouji/openwrt-passwall.git package/openwrt-passwall
+git clone https://github.com/xiaorouji/openwrt-passwall-packages.git package/openwrt-passwall-packages
+
+#git clone -b luci https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall
 #git clone https://github.com/xiaorouji/openwrt-passwall2.git package/passwall2
 #Lucky-Go
 #git clone https://github.com/sirpdboy/luci-app-lucky.git package/lucky
