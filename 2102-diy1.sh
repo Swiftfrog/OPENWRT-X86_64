@@ -31,3 +31,6 @@ git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-a
 
 # 添加edge主题
 git clone https://github.com/kiddin9/luci-theme-edge.git package/luci-theme-edge
+
+# 添加design主题
+git clone -b js https://github.com/gngpp/luci-theme-design.git package/luci-theme-desing
