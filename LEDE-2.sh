@@ -42,5 +42,5 @@ sed -i 's/192.168.1.1/192.168.99.1/g' package/base-files/files/bin/config_genera
 #update golang
 #pushd feeds/packages/lang
 #rm -rf golang && svn co https://github.com/openwrt/packages/branches/openwrt-22.03/lang/golang
-# https://github.com/coolsnowwolf/packages/tree/master/lang/golang
+#rm -rf golang && svn co https://github.com/coolsnowwolf/packages/tree/master/lang/golang
 #popd
