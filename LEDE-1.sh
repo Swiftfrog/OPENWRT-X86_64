@@ -27,10 +27,13 @@
 #git clone https://github.com/esirplayground/luci-app-poweroff.git package/luci-app-poweroff
 
 # 添加argon主题
-git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
+#git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
 
 # 添加edge主题
-git clone https://github.com/kiddin9/luci-theme-edge.git package/luci-theme-edge
+#git clone https://github.com/kiddin9/luci-theme-edge.git package/luci-theme-edge
 
 # 添加design主题
-git clone -b js https://github.com/gngpp/luci-theme-design.git package/luci-theme-design
+git clone https://github.com/gngpp/luci-theme-design.git package/luci-theme-design
+
+# 添加design主题
+git clone https://github.com/thinktip/luci-theme-neobird.git package/luci-theme-neobird
