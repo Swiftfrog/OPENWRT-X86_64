@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: OPENWRT.Master
+name: OPENWRT.2305
 
 on:
   repository_dispatch:
