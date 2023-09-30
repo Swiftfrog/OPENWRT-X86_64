@@ -40,7 +40,7 @@ git clone https://github.com/xiaorouji/openwrt-passwall-packages.git package/ope
 #sed -i '/builddir dependencies/a\$(curdir)/upx/compile := $(curdir)/ucl/compile' tools/Makefile
 
 #update golang
-#pushd feeds/packages/lang
+pushd feeds/packages/lang
 #rm -rf golang && svn co https://github.com/openwrt/packages/branches/openwrt-22.03/lang/golang
-#rm -rf golang && svn co https://github.com/coolsnowwolf/packages/trunk/lang/golang
-#popd
+rm -rf golang && svn co https://github.com/coolsnowwolf/packages/trunk/lang/golang
+popd
