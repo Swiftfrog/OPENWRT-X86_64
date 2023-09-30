@@ -22,7 +22,7 @@ on:
 env:
   REPO_URL: https://github.com/openwrt/openwrt
   REPO_BRANCH: openwrt-21.02
-  FEEDS_CONF: feeds.conf.default
+  FEEDS_CONF: feeds.conf.default.2102
   CONFIG_FILE: OPENWRT.2102
   DIY_P1_SH: OPENWRT.2102.1.sh
   DIY_P2_SH: OPENWRT.2102.2.sh
