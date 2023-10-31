@@ -12,6 +12,9 @@
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
+# Modify BCM57810
+wget -O target/linux/x86/patches-5.15/993-bnx2x_warpcore_8727_2_5g_sgmii_txfault.patch https://raw.githubusercontent.com/Swiftfrog/OPENWRT-X86_64/main/993-bnx2x_warpcore_8727_2_5g_sgmii_txfault.patch
+
 # 添加APP过滤模块
 # git clone https://github.com/destan19/OpenAppFilter package/OpenAppFilter
 # 添加AdguardHome
