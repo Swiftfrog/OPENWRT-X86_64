@@ -288,7 +288,7 @@ CONFIG_SINGBOX_WITH_WIREGUARD=y
 CONFIG_TARGET_ROOTFS_PARTSIZE=512
 # CONFIG_TARGET_ROOTFS_SQUASHFS is not set
 # CONFIG_TARGET_ROOTFS_TARGZ is not set
-CONFIG_VMDK_IMAGES=y
+# CONFIG_VMDK_IMAGES=y
 CONFIG_boost-compile-visibility-hidden=y
 CONFIG_boost-runtime-shared=y
 CONFIG_boost-static-and-shared-libs=y
