@@ -16,10 +16,6 @@
 #wget -O target/linux/x86/patches-5.15/600-bnx2x-warpcore-8727-2g5.patch https://raw.githubusercontent.com/JAMESMTL/snippets/master/bnx2x/patches/bnx2x_warpcore_8727_2_5g_sgmii_txfault.patch
 wget -O target/linux/x86/patches-6.1/600-bnx2x-warpcore-8727-2g5.patch https://raw.githubusercontent.com/JAMESMTL/snippets/master/bnx2x/patches/bnx2x_warpcore_8727_2_5g_sgmii_txfault.patch
 
-wget -O include/kernel-defaults.mk https://raw.githubusercontent.com/Swiftfrog/OPENWRT-X86_64/main/version/kernel-defaults.mk
-wget -O package/kernel/linux/Makefile https://raw.githubusercontent.com/Swiftfrog/OPENWRT-X86_64/main/version/Makefile
-wget https://raw.githubusercontent.com/Swiftfrog/OPENWRT-X86_64/main/version/vermagic
-
 # 添加APP过滤模块
 # git clone https://github.com/destan19/OpenAppFilter package/OpenAppFilter
 # 添加AdguardHome
