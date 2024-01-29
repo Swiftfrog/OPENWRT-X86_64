@@ -21,7 +21,7 @@ on:
 
 env:
   REPO_URL: https://github.com/openwrt/openwrt
-  REPO_BRANCH: '23.05.2'
+  REPO_BRANCH: 'v23.05.2'
   FEEDS_CONF: feeds.2305
   CONFIG_FILE: OPENWRT.2305
   DIY_P1_SH: OPENWRT.2305.1.sh
