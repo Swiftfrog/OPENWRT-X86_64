@@ -26,18 +26,15 @@ export SHELL:=/bin/sh
 include $(INCLUDE_DIR)/package.mk
 
 ifeq ($(DUMP),)
-  STAMP_BUILT:=$(STAMP_BUILT)_$(shell cat $(LINUX_DIR)/.vermagic)
+  STAMP_BUILT:=$(STAMP_BUILT)_$(shell $(SCRIPT_DIR)/kconfig.pl $(LINUX_DIR)/.config | $(MKHASH) md5)
   -include $(LINUX_DIR)/.config
 endif
 
 define Build/Prepare
-        mkdir -p $(PKG_BUILD_DIR)
+	mkdir -p $(PKG_BUILD_DIR)
 endef
 
 define Build/Configure
-endef
-
-define Build/Quilt
 endef
 
 define Build/Compile
@@ -58,16 +55,11 @@ define Package/kernel
 endef
 
 define Package/kernel/install
-        $(INSTALL_DIR) $(1)/$(MODULES_SUBDIR)
-        $(INSTALL_DATA) $(LINUX_DIR)/modules.builtin $(1)/$(MODULES_SUBDIR)
-        $(SED) 's,.*/,,' $(1)/$(MODULES_SUBDIR)/modules.builtin
-        strings $(LINUX_DIR)/modules.builtin.modinfo | \
-                grep -E -v "\.(file$(if CONFIG_MODULE_STRIPPED,|parmtype))=" | \
-                tr '\n' '\0' > $(1)/$(MODULES_SUBDIR)/modules.builtin.modinfo
+  # nothing to do
 endef
 
 define Package/kernel/extra_provides
-        sed -e 's,.*/,,' $(LINUX_DIR)/modules.builtin;
+	sed -e 's,.*/,,' $(LINUX_DIR)/modules.builtin;
 endef
 
 $(eval $(if $(DUMP),,$(call BuildPackage,kernel)))
