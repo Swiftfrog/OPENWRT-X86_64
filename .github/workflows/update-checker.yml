@@ -9,9 +9,9 @@
 # Description: Source code update checker
 #
 
-name: Update Checker
+#name: Update Checker
 
-env:
+#env:
   REPO_URL: https://github.com/openwrt/openwrt
   REPO_BRANCH: master
 
@@ -20,7 +20,7 @@ on:
 #  schedule:
 #    - cron: 0 */18 * * *
 
-jobs:
+#jobs:
   check:
     runs-on: ubuntu-latest
 
