@@ -29,5 +29,5 @@ git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-a
 git clone https://github.com/kiddin9/luci-theme-edge.git package/luci-theme-edge
 
 # 添加passwall
-git clone https://github.com/xiaorouji/openwrt-passwall-packages.git package/openwrt-passwall-packages
-git clone https://github.com/xiaorouji/openwrt-passwall.git package/openwrt-passwall
+git clone https://github.com/xiaorouji/openwrt-passwall-packages.git package/passwall-packages
+git clone https://github.com/xiaorouji/openwrt-passwall.git package/passwall
